@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/b27ba3caa6.js" crossorigin="anonymous"></script>
+    <title>Y.T.Joy</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="../static/figure/Logo.png"> Y.T.Joy
+          </a>
+          <!-- Mobile -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#profile">PROFILE</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!-- Hero unit for introduction -->
+    <section id="home">
+      <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-4">Welcome!</h1>
+                    <a class="btn btn-primary btn-lg" href="#profile" role="button">Learn more About Me</a>
+                </div>
+                <div class="col-md-6">
+                  <form class="form" action="/login" method="POST">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Username</label>
+                      <input name="name" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Password</label>
+                      <input name="password" type="password" class="form-control" id="formGroupExampleInput" placeholder="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="profile">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>PROFILE</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="../static/figure/Photo_Joy.jpg" style="display:block; margin:auto;">
+            <h5>Yang Ya-Ting (Joy)</h5>
+          </div>
+          <div class="col-md-8">
+            <p class="lead">About Me</p>
+            <p>A new graduate from National Central University with a Master's degree in Economics. In addition, I gained big data analytic skills(Hadoop, Spark, Python) in Institute for Information Industry after 600 hours training. I built a web application through Flask for the team project about patents classification. Meanwhile, I built an ANN machine learning model for the solar power system project hosted by Professor Tseng in National Central University. Combined the Economic domain knowledge with big data skills, I would like to become a data analyst or a data engineer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <footer>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../static/figure/Logo.png"><p>© 2021 by Yang.Ya-Ting, Joy.</p>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <!-- Add icon, insert the script of fontawesome into <head> first!-->
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+</html>
